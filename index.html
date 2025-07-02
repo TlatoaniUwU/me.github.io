@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Resources/styles/style_main.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Jaret A. Ramirez</title>
 </head>
-<body>
+<body class="bg-gradient-to-b from-black via-sky-500 to-gray-500">
     <div>
+        <nav>
+            <a href="#" class="text-white">Portfolio</a>
+            <a class="p-2 size-12 bg-white">
+                <svg width="30" height="30">
+                    <use xlink:href="Resources/imgs/sprites.svg#node" />
+                </svg>  
+            </a>
+            
+
+        </nav>
         <div class="header-1">
             <h1 class="myName">Jaret Antonio Ramirez</h1>
         </div>
+        <br>
         <div>
             <section class="outside-a-box">
                 <h2>More than an engineer, an artist.</h2>
@@ -19,11 +31,26 @@
                 </p>
             </section>
             <section class="sec-1">
-                <h2>More than an engineer, an artist.</h2>
+                <div class="container-90">
+                    <br>
+                    <h2>About me</h2>
+                    <p>
+                    Developer with up that 2 years of experience in develop of web applications, videogames, train of IA models and UI design.
+                    </p>
+                    <p>
+                        I'm in love of all the mexican and asian culture.
+                    </p>
+                    <p id="aboutMe">
+                    </p>
+                </div>
+            </section>
+            <section class="outside-a-box">
+                <h3>My travel across the laboral experience</h3>
                 <p>
-                    I'm looking for new challenges, my job is my passion.
+                    A little journey across my laboral habilities:
                 </p>
             </section>
+
             <section class="cont-grid-3">
                 <div class="element-grid-1">
                     <p>Holi esto es para probar el grid.</p>
@@ -47,4 +74,5 @@
         </div>
     </div>
 </body>
+<script src="Resources/JavaS/base.js"></script>
 </html>
