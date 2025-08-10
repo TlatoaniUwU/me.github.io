@@ -7,70 +7,45 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Jaret A. Ramirez</title>
 </head>
-<body class="bg-gradient-to-b from-black via-sky-500 to-gray-500">
+<body class="bg-gradient-to-b from-white to-gray-300">
     <div>
         <nav>
-            <a href="#" class="text-white">Portfolio</a>
-            <a class="p-2 size-12 bg-white">
-                <svg width="30" height="30">
-                    <use xlink:href="Resources/imgs/sprites.svg#node" />
-                </svg>  
-            </a>
-            
-
         </nav>
-        <div class="header-1">
-            <h1 class="myName">Jaret Antonio Ramirez</h1>
-        </div>
+        <header class="flex flex-col justify-center items-center">
+            <img src="Resources/imgs/Yo.png" alt="Jaret en Shibuja Sky"
+            class="h-auto w-[90%] sm:w-[40%] mask-radial-at-center self-center mask-radial-from-50% mask-radial-to-70%">
+            <section class="flex justify-center items-start text-white">
+                <span class="text-xl font-thin flex py-1 px-3 -my-7 rounded-full bg-black/60">
+                    Jaret Antonio Ramirez   
+                </span>
+            </section>
+        </header>
         <br>
         <div>
-            <section class="outside-a-box">
-                <h2>More than an engineer, an artist.</h2>
-                <p>
-                    I'm looking for new challenges, my job is my passion.
-                </p>
+            <section class="flex gap-3 justify-end">
+                <a href="" class="p-2 size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform" style="background:linear-gradient(45deg, #f9ce34 0%, #ee2a7b 40%,#6228d7 100%);">
+                    <svg width="30" height="30">
+                        <use xlink:href="Resources/imgs/sprite.svg#instagram"/>
+                    </svg>
+                </a>
+                <a href="" class="p-2 size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform bg-gray-900">
+                    <svg width="30" height="30">
+                        <use xlink:href="Resources/imgs/sprite.svg#github"/>
+                    </svg>
+                </a>
+                <a href="" class="p-2 size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform bg-white">
+                    <svg width="30" height="30">
+                        <use xlink:href="Resources/imgs/sprite.svg#linkedin"/>
+                    </svg>
+                </a>
             </section>
-            <section class="sec-1">
-                <div class="container-90">
-                    <br>
-                    <h2>About me</h2>
-                    <p>
-                    Developer with up that 2 years of experience in develop of web applications, videogames, train of IA models and UI design.
-                    </p>
-                    <p>
-                        I'm in love of all the mexican and asian culture.
-                    </p>
-                    <p id="aboutMe">
-                    </p>
+            <main class="pt-4">
+                <div class="grid grid-cols-3 grid-rows-2 w-full gap-2 justify-center items-center ">
+                    <span class="flex rounded-3xl h-5 overflow-hidden bg-gradient-to-br from-cyan-900 via-cyan-700 to-cyan-500 col-span-2">
+                        About me
+                    </span>
                 </div>
-            </section>
-            <section class="outside-a-box">
-                <h3>My travel across the laboral experience</h3>
-                <p>
-                    A little journey across my laboral habilities:
-                </p>
-            </section>
-
-            <section class="cont-grid-3">
-                <div class="element-grid-1">
-                    <p>Holi esto es para probar el grid.</p>
-                </div>
-                <div class="element-grid-1">
-                    <p>Holi esto es para probar el grid.</p>
-                </div>
-                <div class="element-grid-1">
-                    <p>Holi esto es para probar el grid.</p>
-                </div>
-                <div class="element-grid-1">
-                    <p>Holi esto es para probar el grid.</p>
-                </div>
-                <div class="element-grid-1">
-                    <p>Holi esto es para probar el grid.</p>
-                </div>
-                <div class="element-grid-1">
-                    <p>Holi esto es para probar el grid.</p>
-                </div>
-            </section>
+            </main>
         </div>
     </div>
 </body>
