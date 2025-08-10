@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Resources/styles/style_main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Jaret A. Ramirez</title>
+</head>
+<body>
+    <section class="h-[100vh] bg-slate-50 sm:flex sm:items-center sm:justify-center">
+        <div class="bg-transparent h-[47%] w-[100%] sm:h-[100%] sm:w-[47%] flex justify-center">
+            <button ondblclick="noPunto('p1')" onclick="punto('p1')" type="button" style="background: linear-gradient(to right, #a1ffce, #faffd1);" class="shadow-xl self-center rounded-2xl w-[98%] h-[98%] sm:w-[98%] sm:h-[98%]  font-bold sm:text-[490px] text-[230px]">
+                <p id="p1"></p>
+            </button>
+            <button onclick="noPunto('p1')" class="h-10 w-10 bg-black fixed inset-0 text-white rounded-full m-5">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+        </div>
+        <!-- Controls -->
+        <div class="bg-transparent h-[6%] w-[100%] flex items-center justify-center sm:h-[100%] sm:w-[6%]">
+            <div class="grid grid-cols-3 gap-1 sm:grid-cols-1 bg-transparent w-[98%] h-[99%] items-center self-center">
+                <button onclick="reset()" 
+                class="rounded-lg bg-[#ffffff] h-[100%] shadow-xl items-center justify-center self-center">
+                    <i class="fa-solid fa-rotate-right text-2xl"></i>
+                </button>
+                <button onclick="" 
+                class="rounded-lg invisible bg-[#ffffff] h-[100%] shadow-xl items-center justify-center self-center">
+                    Config
+                </button>
+                <button onclick="modal()" 
+                class="rounded-lg bg-[#ffffff] h-[100%] shadow-xl items-center justify-center self-center">
+                    <i class="fa-solid fa-gear text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Controls -->
+        <div class="bg-transparent h-[47%] w-[100%] sm:h-[100%] sm:w-[47%] flex self justify-center">
+            <button ondblclick="noPunto('p2')" onclick="punto('p2')" type="button" style="background: linear-gradient(to right, #fe8c00, #f83600);" class="shadow-xl self-center rounded-2xl w-[98%] h-[98%] sm:w-[98%] sm:h-[98%] text-white font-bold sm:text-[490px] text-[230px]">
+                <p id="p2"></p>
+            </button>
+            <button onclick="noPunto('p2')" class="h-10 w-10 bg-white fixed inset-0 rounded-full m-5 sm:ml-[55%] sm:mt-5 mt-[100%] font-bold">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Modal -->
+
+    <div onclick="modal()" id="modal" class="w-[100%] h-[100vh] bg-[#1f110155] fixed inset-0 flex items-center invisible justify-center">
+        <div class="w-[90%] h-[90vh] bg-gray-800 rounded-xl inset-0 m-auto">
+            <p class="bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-5xl font-extrabold text-transparent mt-9 text-center w-[100%]">
+                Ajustes
+            </p>
+            <p class="m-5 text-white">
+                Equipo 1
+            </p>
+            <input type="color" name="" id="e1" class="ml-[5%] w-[90%] h-[5vh] rounded-full border-none">
+        </div>
+    </div>
+</body>
+<script src="Resources/JavaS/base.js"></script>
+<script src="../Resources/JavaS/marcador.js"></script>
+</html>
